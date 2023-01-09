@@ -9,7 +9,11 @@ const GithubStats = () => {
         <Heading color={"white"} mb="10">
           My Statistics
         </Heading>
-        <Flex alignItems="center" gap="20px">
+        <Flex
+          alignItems="center"
+          gap="20px"
+          flexDirection={["column", "column", "row"]}
+        >
           <img
             align="left"
             src="https://github-readme-stats.vercel.app/api/top-langs?username=hr927&show_icons=true&locale=en&layout=compact"

@@ -9,6 +9,7 @@ const Aboutme = () => {
       p="10"
       w="80%"
       pt="90px"
+      id="About Me"
     >
       <Flex
         align="center"

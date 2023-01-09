@@ -18,7 +18,7 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
-const Links = ["Home", "About Me", "Skills", "Project", "Contact", "Resume"];
+const Links = ["Home", "About Me", "Skills", "Projects", "Contact", "Resume"];
 
 const NavLink = ({ children }) => (
   <Link
@@ -31,6 +31,7 @@ const NavLink = ({ children }) => (
     }}
     color={"cyan.400"}
     href={"#"}
+    scr
   >
     {children}
   </Link>
@@ -38,6 +39,13 @@ const NavLink = ({ children }) => (
 
 export default function NavBar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const handleClickScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <>
@@ -63,7 +71,14 @@ export default function NavBar() {
               display={{ base: "none", md: "flex" }}
             >
               {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+                <Button
+                  bgColor={"transparent"}
+                  color="cyan.400"
+                  onClick={() => handleClickScroll(link)}
+                  key={link}
+                >
+                  {link}
+                </Button>
               ))}
             </HStack>
           </HStack>

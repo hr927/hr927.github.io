@@ -17,8 +17,9 @@ import {
   Stack,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import resume from "../assets/Himanshu_Rana_Resume.pdf";
 
-const Links = ["Home", "About Me", "Skills", "Projects", "Contact", "Resume"];
+const Links = ["Home", "About Me", "Skills", "Projects", "Contact"];
 
 const NavLink = ({ children }) => (
   <Link
@@ -80,6 +81,17 @@ export default function NavBar() {
                   {link}
                 </Button>
               ))}
+
+              <a
+                href="https://drive.google.com/file/d/1zg2VwVzGL_brz1-s6C9WiCaXey4tPZ_5/view?usp=sharing"
+                download={resume}
+                // rel="noreferrer"
+                target="_blank"
+              >
+                <Button bgColor={"transparent"} color="cyan.400">
+                  Resume
+                </Button>
+              </a>
             </HStack>
           </HStack>
         </Flex>

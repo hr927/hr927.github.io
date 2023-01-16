@@ -41,6 +41,13 @@ const NavLink = ({ children }) => (
 export default function NavBar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const handleClickScroll = (id) => {
+    if (id === "Home") {
+      const element = document.getElementById("About Me");
+      if (element) {
+        // 👇 Will scroll smoothly to the top of the next section
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
     const element = document.getElementById(id);
     if (element) {
       // 👇 Will scroll smoothly to the top of the next section
@@ -83,9 +90,14 @@ export default function NavBar() {
               ))}
 
               <a
-                href="https://drive.google.com/file/d/1zg2VwVzGL_brz1-s6C9WiCaXey4tPZ_5/view?usp=sharing"
-                download={resume}
-                // rel="noreferrer"
+                href={resume}
+                onClick={() =>
+                  window.open(
+                    `https://drive.google.com/file/d/1zg2VwVzGL_brz1-s6C9WiCaXey4tPZ_5/view?usp=sharing`
+                  )
+                }
+                download="Himanshu_Rana_Resume"
+                rel="noreferrer"
                 target="_blank"
               >
                 <Button bgColor={"transparent"} color="cyan.400">

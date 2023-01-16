@@ -1,6 +1,6 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
 import React from "react";
-
+import resume from "../assets/Himanshu_Rana_Resume.pdf";
 const Aboutme = () => {
   return (
     <Box

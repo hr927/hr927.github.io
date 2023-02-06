@@ -113,7 +113,14 @@ export default function NavBar() {
           <Box pb={4} display={{ md: "none" }}>
             <Stack as={"nav"} spacing={4}>
               {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+                <Button
+                  bgColor={"transparent"}
+                  color="cyan.400"
+                  onClick={() => handleClickScroll(link)}
+                  key={link}
+                >
+                  {link}
+                </Button>
               ))}
             </Stack>
           </Box>

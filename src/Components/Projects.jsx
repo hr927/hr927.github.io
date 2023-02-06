@@ -24,6 +24,7 @@ export default function Projects() {
       m="auto"
       id="Projects"
       mt="10"
+      p={{ base: 5, md: 10 }}
     >
       <Heading fontSize={["2xl", "3xl", "5xl"]} fontWeight="bold" color="white">
         PROJECTS
@@ -216,6 +217,12 @@ export default function Projects() {
                 width={"8%"}
                 m="auto"
               />
+              <Image
+                alt="Tech Stack"
+                src="https://img.icons8.com/color/512/chakra-ui.png"
+                width={"8%"}
+                m="auto"
+              />
             </Stack>
             <Stack direction={"row"} align="center" gap="10px">
               <a
@@ -243,6 +250,94 @@ export default function Projects() {
             objectFit={"cover"}
           />
         </Flex>
+      </SimpleGrid>
+      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
+        <Flex>
+          <Image
+            rounded={"md"}
+            alt={"feature image"}
+            src={
+              "https://user-images.githubusercontent.com/107456969/213979622-8f03f899-2fa8-46ba-a44e-6f91b0bad386.png"
+            }
+            objectFit={"cover"}
+          />
+        </Flex>
+        <Stack spacing={4}>
+          <Heading
+            color="white"
+            fontSize={["md", "2xl", "3xl"]}
+            fontWeight="semibold"
+          >
+            Musafir
+          </Heading>
+          <Text
+            color={"gray.200"}
+            fontSize={["md", "l", "xl"]}
+            fontWeight="semibold"
+          >
+            Musafir is a website for tours and travel created with one thought
+            that is to empower Indian traveler with instant bookings and
+            comprehensive choices.
+          </Text>
+          <Stack
+            spacing={4}
+            divider={
+              <StackDivider
+                borderColor={useColorModeValue("gray.100", "gray.700")}
+              />
+            }
+          >
+            <Stack direction={"row"} align="center" gap="10px">
+              <Text
+                color={"gray.200"}
+                fontSize={["md", "l", "xl"]}
+                fontWeight="semibold"
+              >
+                Tech Stack
+              </Text>
+              <Image
+                alt="Tech Stack"
+                src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
+                width={"8%"}
+                m="auto"
+              />
+              <Image
+                alt="Tech Stack"
+                src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/187_Js_logo_logos-512.png"
+                width={"8%"}
+                m="auto"
+              />
+              <Image
+                alt="Tech Stack"
+                src="https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-256.png"
+                width={"8%"}
+                m="auto"
+              />
+              <Image
+                alt="Tech Stack"
+                src="https://img.icons8.com/color/256/material-ui.png "
+                width={"8%"}
+                m="auto"
+              />
+            </Stack>
+            <Stack direction={"row"} align="center" gap="10px">
+              <a
+                href="https://github.com/hr927/Musafir-mmt-clone-"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <Button>Github</Button>
+              </a>
+              <a
+                href="https://musafir-travel.netlify.app/"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <Button>Deployed</Button>
+              </a>
+            </Stack>
+          </Stack>
+        </Stack>
       </SimpleGrid>
     </Flex>
   );

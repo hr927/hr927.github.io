@@ -28,8 +28,16 @@ import { BsGithub, BsLinkedin, BsPerson } from "react-icons/bs";
 
 export default function Contact() {
   return (
-    <Container maxW="full" mt={0} centerContent overflow="hidden" id="Contact">
-      <Flex>
+    <Container
+      maxW="8xl"
+      m={"auto"}
+      centerContent
+      overflow="hidden"
+      id="Contact"
+      w={{ sm: "50%", md: "100%" }}
+      // pl={{ sm: 40 }}
+    >
+      <Flex m={"auto"}>
         <Box
           color="white"
           borderRadius="lg"

@@ -14,7 +14,7 @@ const Skills = () => {
     {
       id: 1,
       title: "HTML",
-      url: "https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-html-logo-0.png",
+      url: "https://i.ibb.co/7RBGS9d/1051277.png",
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ const Skills = () => {
     {
       id: 3,
       title: "JavaScript",
-      url: "https://www.freepnglogos.com/uploads/javascript-png/js-logo-png-5.png",
+      url: "https://i.ibb.co/DLck1xV/5968292.png",
     },
     {
       id: 4,
@@ -46,15 +46,22 @@ const Skills = () => {
       title: "Chakra-UI",
       url: "https://img.icons8.com/color/512/chakra-ui.png",
     },
+  ];
+  const tools = [
     {
-      id: 8,
+      id: 1,
       title: "Github",
       url: "https://i.ibb.co/pfyhW85/pngwing-com-5.png",
     },
     {
-      id: 9,
+      id: 2,
       title: "npm",
       url: "https://i.ibb.co/jyPf42r/pngwing-com-3.png",
+    },
+    {
+      id: 2,
+      title: "VS-Code",
+      url: "https://i.ibb.co/J7rmj6P/906324.png",
     },
   ];
   return (
@@ -87,8 +94,50 @@ const Skills = () => {
               <Box rounded={"lg"} mt={-12} pos={"relative"} height={"200px"}>
                 <Image
                   rounded={"lg"}
-                  height={230}
-                  width={282}
+                  height={180}
+                  width={180}
+                  m={"auto"}
+                  objectFit={"fill"}
+                  src={tech.url}
+                />
+              </Box>
+              <Stack pt={10} align={"center"}>
+                <Heading
+                  fontSize={"2xl"}
+                  fontFamily={"body"}
+                  fontWeight={500}
+                  color="white"
+                >
+                  {tech.title}
+                </Heading>
+              </Stack>
+            </Box>
+          </Center>
+        ))}
+      </SimpleGrid>
+      <Heading fontSize={["2xl", "3xl", "5xl"]} fontWeight="bold" color="white">
+        TOOLS
+      </Heading>
+      <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={10}>
+        {tools.map((tech) => (
+          <Center py={12}>
+            <Box
+              role={"group"}
+              p={6}
+              maxW={"280px"}
+              w={"full"}
+              bg={("transparent", "gray.800")}
+              boxShadow={"2xl"}
+              rounded={"lg"}
+              pos={"relative"}
+              zIndex={1}
+            >
+              <Box rounded={"lg"} mt={-12} pos={"relative"} height={"200px"}>
+                <Image
+                  rounded={"lg"}
+                  height={180}
+                  width={180}
+                  m={"auto"}
                   objectFit={"fill"}
                   src={tech.url}
                 />

@@ -5,7 +5,7 @@ import GitHubCalendar from "react-github-calendar";
 const GithubStats = () => {
   return (
     <div>
-      <Flex direction={"column"} alignItems="center" mb="20">
+      <Flex direction={"column"} alignItems="center" mb="20" p={5}>
         <Heading color={"white"} mb="10">
           My Statistics
         </Heading>
@@ -26,7 +26,7 @@ const GithubStats = () => {
           />
         </Flex>
       </Flex>
-      <Flex direction={"column"} alignItems="center">
+      <Flex direction={"column"} alignItems="center" p={5}>
         <Heading color={"white"} mb="10">
           My Github Calendar
         </Heading>

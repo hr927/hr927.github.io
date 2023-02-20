@@ -29,8 +29,15 @@ export default function Projects() {
       <Heading fontSize={["2xl", "3xl", "5xl"]} fontWeight="bold" color="white">
         PROJECTS
       </Heading>
-      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
-        <Stack spacing={4}>
+      <SimpleGrid
+        columns={{ base: 1, md: 2 }}
+        spacing={10}
+        p={2}
+        m={2}
+        borderRadius={"5px"}
+        boxShadow={"rgba(3, 102, 214, 0.3) 0px 0px 0px 3px"}
+      >
+        <Stack spacing={4} p={3}>
           <Heading
             color="white"
             fontSize={["md", "2xl", "3xl"]}
@@ -97,7 +104,14 @@ export default function Projects() {
           />
         </Flex>
       </SimpleGrid>
-      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
+      <SimpleGrid
+        columns={{ base: 1, md: 2 }}
+        spacing={10}
+        p={2}
+        m={2}
+        borderRadius={"5px"}
+        boxShadow={"rgba(3, 102, 214, 0.3) 0px 0px 0px 3px"}
+      >
         <Flex>
           <Image
             rounded={"md"}
@@ -106,7 +120,7 @@ export default function Projects() {
             objectFit={"cover"}
           />
         </Flex>
-        <Stack spacing={4}>
+        <Stack spacing={4} p={3}>
           <Heading
             color="white"
             fontSize={["md", "2xl", "3xl"]}
@@ -165,8 +179,15 @@ export default function Projects() {
           </Stack>
         </Stack>
       </SimpleGrid>
-      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
-        <Stack spacing={4}>
+      <SimpleGrid
+        columns={{ base: 1, md: 2 }}
+        spacing={10}
+        p={2}
+        m={2}
+        borderRadius={"5px"}
+        boxShadow={"rgba(3, 102, 214, 0.3) 0px 0px 0px 3px"}
+      >
+        <Stack spacing={4} p={3}>
           <Heading
             color="white"
             fontSize={["md", "2xl", "3xl"]}
@@ -251,7 +272,14 @@ export default function Projects() {
           />
         </Flex>
       </SimpleGrid>
-      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
+      <SimpleGrid
+        columns={{ base: 1, md: 2 }}
+        spacing={10}
+        p={2}
+        m={2}
+        borderRadius={"5px"}
+        boxShadow={"rgba(3, 102, 214, 0.3) 0px 0px 0px 3px"}
+      >
         <Flex>
           <Image
             rounded={"md"}
@@ -262,7 +290,7 @@ export default function Projects() {
             objectFit={"cover"}
           />
         </Flex>
-        <Stack spacing={4}>
+        <Stack spacing={4} p={3}>
           <Heading
             color="white"
             fontSize={["md", "2xl", "3xl"]}

@@ -42,6 +42,26 @@ const Aboutme = () => {
             end. Always up for a challenge, interested in learning new languages
             and frameworks.
           </Text>
+          <a
+            href={resume}
+            onClick={() =>
+              window.open(
+                `https://drive.google.com/file/d/1zg2VwVzGL_brz1-s6C9WiCaXey4tPZ_5/view?usp=sharing`
+              )
+            }
+            download="Himanshu_Rana_Resume"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <Button
+              bgColor={"gray.300"}
+              color="cyan.600"
+              mt={5}
+              fontSize={"20px"}
+            >
+              Resume
+            </Button>
+          </a>
         </Box>
         <Image
           src='https://avatars.githubusercontent.com/u/64404614?v=4"'

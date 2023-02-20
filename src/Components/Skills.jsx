@@ -46,6 +46,11 @@ const Skills = () => {
       title: "Chakra-UI",
       url: "https://img.icons8.com/color/512/chakra-ui.png",
     },
+    {
+      id: 8,
+      title: "Mongo-DB",
+      url: "https://i.ibb.co/CbgwRwH/pngwing-com-6.png",
+    },
   ];
   const tools = [
     {
@@ -77,13 +82,13 @@ const Skills = () => {
       <Heading fontSize={["2xl", "3xl", "5xl"]} fontWeight="bold" color="white">
         SKILLS
       </Heading>
-      <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={10}>
+      <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={1}>
         {techs.map((tech) => (
           <Center py={12}>
             <Box
               role={"group"}
-              p={6}
-              maxW={"280px"}
+              p={5}
+              maxW={"200px"}
               w={"full"}
               bg={("transparent", "gray.800")}
               boxShadow={"2xl"}
@@ -91,17 +96,17 @@ const Skills = () => {
               pos={"relative"}
               zIndex={1}
             >
-              <Box rounded={"lg"} mt={-12} pos={"relative"} height={"200px"}>
+              <Box rounded={"lg"} mt={-12} pos={"relative"} height={"100px"}>
                 <Image
                   rounded={"lg"}
-                  height={180}
-                  width={180}
+                  height={100}
+                  width={100}
                   m={"auto"}
                   objectFit={"fill"}
                   src={tech.url}
                 />
               </Box>
-              <Stack pt={10} align={"center"}>
+              <Stack pt={5} align={"center"}>
                 <Heading
                   fontSize={"2xl"}
                   fontFamily={"body"}
@@ -118,7 +123,7 @@ const Skills = () => {
       <Heading fontSize={["2xl", "3xl", "5xl"]} fontWeight="bold" color="white">
         TOOLS
       </Heading>
-      <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={10}>
+      <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={1}>
         {tools.map((tech) => (
           <Center py={12}>
             <Box
@@ -132,17 +137,17 @@ const Skills = () => {
               pos={"relative"}
               zIndex={1}
             >
-              <Box rounded={"lg"} mt={-12} pos={"relative"} height={"200px"}>
+              <Box rounded={"lg"} mt={-12} pos={"relative"} height={"100px"}>
                 <Image
                   rounded={"lg"}
-                  height={180}
-                  width={180}
+                  height={100}
+                  width={100}
                   m={"auto"}
                   objectFit={"fill"}
                   src={tech.url}
                 />
               </Box>
-              <Stack pt={10} align={"center"}>
+              <Stack pt={5} align={"center"}>
                 <Heading
                   fontSize={"2xl"}
                   fontFamily={"body"}

@@ -72,7 +72,9 @@ export default function NavBar() {
             display={{ md: "none" }}
             onClick={isOpen ? onClose : onOpen}
           />
-          <Box color={"cyan.400"}>Himanshu Rana</Box>
+          <Box color={"cyan.400"} fontSize="20px">
+            Himanshu Rana
+          </Box>
           <HStack spacing={8} alignItems={"center"}>
             <HStack
               as={"nav"}
@@ -84,6 +86,7 @@ export default function NavBar() {
                   bgColor={"transparent"}
                   color="cyan.400"
                   onClick={() => handleClickScroll(link)}
+                  fontSize="20px"
                   key={link}
                 >
                   {link}
@@ -101,7 +104,11 @@ export default function NavBar() {
                 rel="noreferrer"
                 target="_blank"
               >
-                <Button bgColor={"transparent"} color="cyan.400">
+                <Button
+                  bgColor={"transparent"}
+                  color="cyan.400"
+                  fontSize="20px"
+                >
                   Resume
                 </Button>
               </a>

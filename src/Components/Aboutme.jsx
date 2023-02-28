@@ -1,6 +1,6 @@
 import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
 import React from "react";
-import resume from "../assets/Himanshu_Rana_Resume.pdf";
+import resume from "../assets/fw21_0518_Himanshu_Rana_Resume.pdf";
 const Aboutme = () => {
   return (
     <Box
@@ -15,8 +15,9 @@ const Aboutme = () => {
         align="center"
         flexDirection={["column", "column", "row"]}
         maxW={"8xl"}
+        gap={3}
       >
-        <Box textAlign={"start"} w="80%">
+        <Box textAlign={"start"} w="100%" p={"2"}>
           <Text
             color="white"
             fontSize={["md", "2xl", "3xl"]}
@@ -34,7 +35,7 @@ const Aboutme = () => {
           </Text>
           <Text
             color={"gray.200"}
-            fontSize={["md", "l", "l"]}
+            fontSize={["sm", "l", "l"]}
             fontWeight="semibold"
           >
             Aspiring Full Stack Developer. Capable of writing production-ready
@@ -68,6 +69,7 @@ const Aboutme = () => {
           rounded="full"
           boxSize={["200px", "200px", "300px"]}
           ml="50px"
+          m={"auto"}
         />
       </Flex>
     </Box>

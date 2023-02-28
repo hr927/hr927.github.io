@@ -367,6 +367,102 @@ export default function Projects() {
           </Stack>
         </Stack>
       </SimpleGrid>
+      <SimpleGrid
+        columns={{ base: 1, md: 2 }}
+        spacing={10}
+        p={2}
+        m={2}
+        borderRadius={"5px"}
+        boxShadow={"rgba(3, 102, 214, 0.3) 0px 0px 0px 3px"}
+      >
+        <Stack spacing={4} p={3}>
+          <Heading
+            color="white"
+            fontSize={["md", "2xl", "3xl"]}
+            fontWeight="semibold"
+          >
+            Movie Matrix
+          </Heading>
+          <Text
+            color={"gray.200"}
+            fontSize={["md", "l", "xl"]}
+            fontWeight="semibold"
+          >
+            MovieMatrix is one stop solution for any information regarding
+            movies, web series, tv-shows, you can find trailers, details add
+            reviews or make a watchlist. We provide smart content search &
+            recommendations.
+          </Text>
+          <Stack
+            spacing={4}
+            divider={
+              <StackDivider
+                borderColor={useColorModeValue("gray.100", "gray.700")}
+              />
+            }
+          >
+            <Stack direction={"row"} align="center" gap="10px">
+              <Text
+                color={"gray.200"}
+                fontSize={["md", "l", "xl"]}
+                fontWeight="semibold"
+              >
+                Tech Stack
+              </Text>
+              <Image
+                alt="Tech Stack"
+                src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
+                width={"8%"}
+                m="auto"
+              />
+              <Image
+                alt="Tech Stack"
+                src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/187_Js_logo_logos-512.png"
+                width={"8%"}
+                m="auto"
+              />
+              <Image
+                alt="Tech Stack"
+                src="https://i.ibb.co/CbgwRwH/pngwing-com-6.png"
+                width={"8%"}
+                m="auto"
+              />
+              <Image
+                alt="Tech Stack"
+                src="https://img.icons8.com/color/512/chakra-ui.png"
+                width={"8%"}
+                m="auto"
+              />
+            </Stack>
+            <Stack direction={"row"} align="center" gap="10px">
+              <a
+                href="https://github.com/hr927/MovieMatrix-Zee5_Clone"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <Button>Github</Button>
+              </a>
+              <a
+                href="https://moviematrix.vercel.app/"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <Button>Deployed</Button>
+              </a>
+            </Stack>
+          </Stack>
+        </Stack>
+        <Flex>
+          <Image
+            rounded={"md"}
+            alt={"feature image"}
+            src={
+              "https://user-images.githubusercontent.com/112627297/221422870-1e70c6c5-dd1e-4168-b781-32da146b2778.png"
+            }
+            objectFit={"cover"}
+          />
+        </Flex>
+      </SimpleGrid>
     </Flex>
   );
 }

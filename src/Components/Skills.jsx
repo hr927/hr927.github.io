@@ -78,11 +78,12 @@ const Skills = () => {
       m="auto"
       id="Skills"
       mt="10"
+      p={2}
     >
       <Heading fontSize={["2xl", "3xl", "5xl"]} fontWeight="bold" color="white">
         SKILLS
       </Heading>
-      <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={1}>
+      <SimpleGrid columns={{ base: 2, md: 3, lg: 4 }} spacing={1}>
         {techs.map((tech) => (
           <Center py={12}>
             <Box

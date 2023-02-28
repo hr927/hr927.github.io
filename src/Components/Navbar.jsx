@@ -17,7 +17,7 @@ import {
   Stack,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-import resume from "../assets/Himanshu_Rana_Resume.pdf";
+import resume from "../assets/fw21_0518_Himanshu_Rana_Resume.pdf";
 
 const Links = ["Home", "About Me", "Skills", "Projects", "Contact"];
 
